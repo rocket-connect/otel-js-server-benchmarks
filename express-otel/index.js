@@ -28,7 +28,6 @@ if (cluster.isPrimary) {
   }
 } else {
   var app = express();
-  app.use(express.json());
 
   app.use("/hello", async (req, res) => {
     const tracer = opentelemetry.trace.getTracer("hello-tracer");

@@ -8,7 +8,6 @@ if (cluster.isPrimary) {
   }
 } else {
   var app = express();
-  app.use(express.json());
 
   app.use("/hello", async (req, res) => {
     res.json({ message: "Hello World" }).end();
