@@ -75,8 +75,8 @@ end
 benchmarks = benchmarks.sort do |a, b|
   b.result.not_nil!.["rps"]["mean"].as_f <=> a.result.not_nil!.["rps"]["mean"].as_f
 end
-readme = ECR.render("benchmark.ecr")
-File.write "benchmark.md", readme
+readme = ECR.render("benchmarks.ecr")
+File.write "benchmarks.md", readme
 puts readme
 
 def run(cmd, args, dir = Dir.current, wait = false, output = Process::Redirect::Inherit, error = Process::Redirect::Inherit)
