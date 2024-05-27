@@ -6,3 +6,11 @@
   run:
     cmd: node
     args: ["index.js"]
+- id: express-otel
+  name: express
+  url: https://github.com/expressjs/express
+  lang: Node.js
+  server: express
+  run:
+    cmd: node
+    args: ["index.js"]
