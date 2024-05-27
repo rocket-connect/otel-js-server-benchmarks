@@ -41,6 +41,6 @@ jobs:
       - name: Push readme
         if: ${{ github.event_name == 'push' }}
         run: |
-          git add README.md
-          git commit -m "update readme"
+          git add benchmarks.md
+          git commit -m "update benchmarks"
           git push
