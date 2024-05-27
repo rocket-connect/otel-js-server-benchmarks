@@ -11,9 +11,7 @@ if (cluster.isPrimary) {
   app.use(express.json());
 
   app.use("/hello", async (req, res) => {
-    sendResult(result, {
-      hello: "world",
-    });
+    res.json({ message: "Hello World" }).end();
   });
 
   app.listen(8000);
