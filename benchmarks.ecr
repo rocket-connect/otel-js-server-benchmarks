@@ -1,0 +1,9 @@
+<!-- README.md is generated from README.ecr, do not edit -->
+
+# Benchmarks
+
+| Name                          | Language      | Server          | Latency avg      | Requests      |
+| ----------------------------  | ------------- | --------------- | ---------------- | ------------- |
+<%- benchmarks.each do |b| -%>
+| [<%= b.name %>](<%= b.url %>) | <%= b.lang %> | <%= b.server %> | <%= b.latency %> | <%= b.reqs %> |
+<%- end -%>
