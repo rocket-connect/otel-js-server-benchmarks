@@ -7,7 +7,7 @@
     cmd: node
     args: ["index.js"]
 - id: express-otel
-  name: express
+  name: express-otel
   url: https://github.com/expressjs/express
   lang: Node.js
   server: express
