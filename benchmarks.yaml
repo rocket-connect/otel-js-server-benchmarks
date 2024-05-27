@@ -1,8 +1,14 @@
+- id: http
+  name: http
+  url: https://nodejs.org/api/http.html
+  lang: Node.js
+  run:
+    cmd: node
+    args: ["index.js"]
 - id: express
   name: express
   url: https://github.com/expressjs/express
   lang: Node.js
-  server: express
   run:
     cmd: node
     args: ["index.js"]
@@ -10,7 +16,6 @@
   name: express-otel
   url: https://github.com/expressjs/express
   lang: Node.js
-  server: express
   run:
     cmd: node
     args: ["index.js"]

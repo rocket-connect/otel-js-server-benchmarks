@@ -128,7 +128,6 @@ class Benchmark
   property name : String
   property url : String
   property lang : String
-  property server : String
   property run : Script
 
   @[YAML::Field(ignore: true)]
