@@ -17,7 +17,5 @@ if (cluster.isPrimary) {
     }
   });
 
-  server.listen(8000, () => {
-    console.log(`Worker ${process.pid} started`);
-  });
+  server.listen(8000);
 }
