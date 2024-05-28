@@ -2,8 +2,9 @@
 
 # Benchmarks
 
-| Name                          | Language      |  Latency avg      | Requests      |
-| ----------------------------  | ------------- |  ---------------- | ------------- |
-| [http](https://nodejs.org/api/http.html) | Node.js | 6.31ms | 16kps |
-| [express](https://github.com/expressjs/express) | Node.js | 17.43ms | 5.7kps |
-| [express-otel](https://github.com/expressjs/express) | Node.js | 33.22ms | 3.0kps |
+| Name                          |  Latency avg      | Requests      |
+| ----------------------------  |  ---------------- | ------------- |
+| [http](https://nodejs.org/api/http.html) | 6.26ms | 16kps |
+| [express](https://github.com/expressjs/express) | 18.03ms | 5.5kps |
+| [http-otel](https://nodejs.org/api/http.html) | 22.03ms | 4.5kps |
+| [express-otel](https://github.com/expressjs/express) | 38.22ms | 2.6kps |
