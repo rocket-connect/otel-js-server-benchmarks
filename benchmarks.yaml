@@ -33,3 +33,10 @@
   run:
     cmd: node
     args: ["index.js"]
+- id: express-otel-batch
+  name: express-otel-batch
+  url: https://github.com/expressjs/express
+  lang: Node.js
+  run:
+    cmd: node
+    args: ["index.js"]
