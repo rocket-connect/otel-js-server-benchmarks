@@ -19,26 +19,3 @@ if (cluster.isPrimary) {
 
   server.listen(8000);
 }
-
-const resolvers = {
-  Query: {
-    hello: (root, args, context, info) => {
-      const tracer = opentelemetry.trace.getTracer("example-tracer");
-      const span = tracer.startSpan("say-hello");
-      span.setAttribute("hello-to", "world");
-      span.setAttribute("query", JSON.stringify(info.operation));
-      span.addEvent("invoking resolvers");
-      span.end();
-      return "world";
-    },
-  },
-};
-
-app.use("/hello", async (req, res) => {
-  const tracer = opentelemetry.trace.getTracer("hello-tracer");
-  const span = tracer.startSpan("hello");
-  span.setAttribute("value", "world");
-  span.end();
-
-  res.json({ message: "Hello World" }).end();
-});
