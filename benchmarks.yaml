@@ -12,6 +12,13 @@
   run:
     cmd: node
     args: ["index.js"]
+- id: http-otel-batch
+  name: http-otel-batch
+  url: https://nodejs.org/api/http.html
+  lang: Node.js
+  run:
+    cmd: node
+    args: ["index.js"]
 - id: express
   name: express
   url: https://github.com/expressjs/express
