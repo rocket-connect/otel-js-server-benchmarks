@@ -5,6 +5,9 @@ pkgs.mkShell {
     nodePackages.npm
     rustc
     cargo
+    go
+    crystal
+    mix
   ];
 
   shellHook = ''
