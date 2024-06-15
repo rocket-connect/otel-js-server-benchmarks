@@ -7,7 +7,6 @@ pkgs.mkShell {
     cargo
     go
     crystal
-    mix
   ];
 
   shellHook = ''
@@ -17,8 +16,6 @@ pkgs.mkShell {
     export PATH="$HOME/go/bin:$HOME/.cargo/bin"
 
     go install github.com/codesenberg/bombardier@latest
-    mix local.hex --force
-    mix local.rebar --force
 
     cargo install --git https://github.com/tailcallhq/tailcall
   '';
